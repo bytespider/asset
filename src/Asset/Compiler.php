@@ -42,7 +42,7 @@ class Compiler
     public function compile($files, $postfix = null)
     {
         Registry::flush();
-        $files = is_array($files) ? $files : [$files];
+        $files = is_array($files) ? $files : array($files);
         foreach ($files as $file) {
             Registry::push($this->_config, $file);
         }
