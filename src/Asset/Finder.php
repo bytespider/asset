@@ -63,7 +63,7 @@ class Finder
             return glob($this->_dir);
         }
 
-        return [$this->_dir];
+        return array($this->_dir);
     }
 
     /**
