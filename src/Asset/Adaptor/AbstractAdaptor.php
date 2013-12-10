@@ -27,20 +27,20 @@ abstract class AbstractAdaptor
     /**
      * @var array
      */
-    private static $_extensions = [
+    private static $_extensions = array(
         self::TYPE_STYLE    => '.css',
         self::TYPE_SCRIPT   => '.js',
         self::TYPE_OTHER    => '.txt'
-    ];
+    );
 
     /**
      * @var array
      */
-    private static $_serialize = [
+    private static $_serialize = array(
         self::TYPE_STYLE    => '<link rel="stylesheet" href="%s" />',
         self::TYPE_SCRIPT   => '<script src="%s"></script>',
         self::TYPE_OTHER    => '<script>%s</script>'
-    ];
+    );
 
     /**
      * @return string

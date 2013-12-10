@@ -24,17 +24,17 @@ class Config
     /**
      * @var array
      */
-    private $_config = [
+    private $_config = array(
         self::CACHE => false,
         self::URL   => '/',
         self::ENV   => self::ENV_DEVELOPMENT,
         self::BASE_PATH => ''
-    ];
+    );
 
     /**
      * @param array $config
      */
-    public function __construct(array $config = [])
+    public function __construct(array $config = array())
     {
         $this->_config = array_merge($this->_config, $config);
     }

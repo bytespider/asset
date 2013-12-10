@@ -21,13 +21,13 @@ class Registry
     /**
      * @var array
      */
-    private static $_files = [];
+    private static $_files = array();
 
     /**
      * Files hash
      * @var array
      */
-    private static $_existsFiles = [];
+    private static $_existsFiles = array();
 
     /**
      * @param Config $config
@@ -84,6 +84,6 @@ class Registry
      */
     public static function flush()
     {
-        return self::$_files = [];
+        return self::$_files = array();
     }
 }

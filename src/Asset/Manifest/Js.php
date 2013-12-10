@@ -17,7 +17,7 @@ class Js implements ManifestInterface
     /**
      * @var array
      */
-    private $_requires = [];
+    private $_requires = array();
 
     /**
      * @param $source

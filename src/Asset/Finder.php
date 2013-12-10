@@ -47,7 +47,7 @@ class Finder
     {
         $this->_dir = trim($this->_dir);
         if ($this->_search) {
-            $result = [];
+            $result = array();
             $iterator = new \RecursiveIteratorIterator(
                 new \RecursiveDirectoryIterator(
                     $this->_dir,

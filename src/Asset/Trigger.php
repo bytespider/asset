@@ -17,7 +17,7 @@ class Trigger
     /**
      * @var array
      */
-    private static $_triggers = [];
+    private static $_triggers = array();
 
     /**
      * @param callable $cb
@@ -41,7 +41,7 @@ class Trigger
      */
     public static function adaptor($name, callable $cb)
     {
-        if (!isset(self::$_triggers[$name])) { self::$_triggers[$name] = []; }
+        if (!isset(self::$_triggers[$name])) { self::$_triggers[$name] = array(); }
         self::$_triggers[$name][] = $cb;
     }
 
