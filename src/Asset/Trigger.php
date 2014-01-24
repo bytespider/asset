@@ -22,7 +22,7 @@ class Trigger
     /**
      * @param callable $cb
      */
-    public static function css(callable $cb)
+    public static function css($cb)
     {
         self::adaptor('css', $cb);
     }
@@ -30,7 +30,7 @@ class Trigger
     /**
      * @param callable $cb
      */
-    public static function js(callable $cb)
+    public static function js($cb)
     {
         self::adaptor('js', $cb);
     }
@@ -39,7 +39,7 @@ class Trigger
      * @param $name
      * @param callable $cb
      */
-    public static function adaptor($name, callable $cb)
+    public static function adaptor($name, $cb)
     {
         if (!isset(self::$_triggers[$name])) { self::$_triggers[$name] = array(); }
         self::$_triggers[$name][] = $cb;
